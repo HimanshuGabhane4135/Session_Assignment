@@ -1,0 +1,121 @@
+body>table {
+  width: 80%;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.list th {
+  cursor: pointer;
+}
+
+.list .th-sort-asc::after {
+  content: "\25b4";
+}
+
+.list .th-sort-desc::after {
+  content: "\25be";
+}
+
+.list .th-sort-asc::after,
+.list .th-sort-desc::after {
+  margin-left: 5px;
+}
+
+.list .th-sort-asc,
+.list .th-sort-desc {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+table.list {
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even),
+table.list thead>tr {
+  background-color: #dddddd;
+}
+
+input[type=text],
+input[type=number] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 30%;
+  background-color: #ddd;
+  color: #000;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=reset] {
+  width: 30%;
+  background-color: #ddd;
+  color: #000;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form div.form-action-buttons {
+  text-align: right;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #0000ee;
+  margin-right: 4px;
+}
+
+label.validation-error {
+  color: red;
+  margin-left: 5px;
+}
+
+.hide {
+  display: none;
+}
+
+/* Pagination */
+
+div.pager {
+  text-align: center;
+  margin: 1em 0;
+}
+
+div.pager span {
+  display: inline-block;
+  width: 1.8em;
+  height: 1.8em;
+  line-height: 1.8;
+  text-align: center;
+  cursor: pointer;
+  background: #000;
+  color: #fff;
+  margin-right: 0.5em;
+}
+
+div.pager span.active {
+  background: #c00;
+}

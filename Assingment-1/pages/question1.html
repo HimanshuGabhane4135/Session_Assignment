@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question - 1</title>
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <form>
+        <h2>" hello there , how are you "</h2>
+        <input type="text" onblur="this.value=removeSpaces(this.value);" placeholder="Enter string to remove white space!">
+        <input type="button" value="Remove">
+        <br><br>
+        <input type="text" value="" id="inpForReplace" placeholder="Enter String"><br><br>
+        <input type="text" value="" id="inpName" placeholder="Enter your name!">
+        <button type="button" onclick="replaceString()">Replace</button>
+        <br><br>
+        <input type="text" value="" id="inpForFind" placeholder="Enter String"><br><br>
+        <input type="text" value="" id="inpFindStr" placeholder="Enter string to Find">
+        <button type="button" onclick="findIndexString()">Find</button>
+        <br><br>
+        <input type="text" value="" id="inpForConcate" placeholder="Enter String"><br><br>
+        <input type="text" value="" id="inpConcateStr" placeholder="Enter string to concat at end!">
+        <button type="button" onclick="concateString()">Concate</button>
+    </form>
+</body>
+</html>
