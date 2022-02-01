@@ -1,0 +1,446 @@
+:root {
+    --primary-color: rgb(0, 40, 85);
+    --secondary-color: rgb(250, 70, 22);
+}
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('../fonts/opensans-bold-webfont.woff2') format('woff2'),
+        url('../fonts/opensans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+        url('../fonts/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'exo_2bold';
+    src: url('../fonts/exo2-bold-webfont.woff2') format('woff2'),
+        url('../fonts/exo2-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'exo_2extra_bold';
+    src: url('../fonts/exo2-extrabold-webfont.woff2') format('woff2'),
+        url('../fonts/exo2-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.upper-top-1 {
+    position: fixed;
+    z-index: 7;
+}
+
+.upper-top {
+    background-color: var(--primary-color);
+}
+
+.upper-top pre {
+    color: white;
+    text-align: right;
+    margin-bottom: 0;
+    margin-right: 215px;
+    font-family: 'open_sansregular';
+    padding: 17px 0;
+}
+
+.upper-top .bold {
+    font-family: 'open_sansbold';
+    color: var(--secondary-color);
+}
+
+.upper-top .bold-1 {
+    font-family: 'open_sansbold';
+    color: var(--secondary-color);
+}
+
+.upper-top-1 {
+    background-color: rgba(0, 40, 85, 0.8);
+    position: absolute;
+    display: flex;
+    width: 100%;
+}
+
+.upper-top-1 .logo {
+    margin-left: 215px;
+    padding: 18px;
+}
+
+.upper-top-1 .hero-section {
+    display: flex;
+    padding: 25px;
+    margin-right: 215px;
+    list-style: none;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.hero-section a:hover {
+    color: var(--secondary-color);
+}
+
+.upper-top-1 .col-6 {
+    justify-content: end;
+}
+
+.upper-top-1 li {
+    margin-left: 24px;
+}
+
+.upper-top-1 .link {
+    font-family: 'open_sansbold';
+    text-decoration: none;
+    color: white;
+}
+
+.hmain {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.hero {
+    position: relative;
+    height: 800px;
+    display: flex;
+}
+
+.hero .main-hero {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+}
+
+.hero .fade-hero {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+
+.hero .hero-content {
+    position: relative;
+    z-index: 7;
+    flex-direction: column;
+    align-items: end;
+}
+
+.rcmain {
+    width: 60%;
+}
+
+.content {
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.hero .hero-content .main {
+    font-family: 'exo_2extra_bold';
+    color: white;
+    font-weight: 800;
+    font-size: 80px;
+    text-align: right;
+}
+
+.hero .hero-content .sub {
+    font-family: 'open_sansregular';
+    color: white;
+    width: 613px;
+    height: 48px;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 400;
+    text-align: right;
+    filter: drop-shadow(0px 5px 5px rgba(85, 85, 85, 0.75));
+}
+
+.hero .hero-content .btn {
+    font-family: 'exo_2extra_bold';
+    background-color: var(--secondary-color);
+    font-size: 18px;
+    line-height: 28px;
+    color: #ffffff;
+    font-weight: 800;
+    text-align: center;
+}
+
+.right-content {
+    width: 100%;
+}
+
+.content {
+    width: 1168px;
+    height: 311px;
+    font-size: 24px;
+    line-height: 35px;
+    color: var(--primary-color);
+    font-weight: 400;
+    font-family: 'open_sansregular';
+}
+
+.service-text {
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.assemble {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.sub-content .main-con {
+    font-family: 'open_sansbold';
+    font-size: 20px;
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+.sub-content h2 {
+    font-size: 52px;
+    color: white;
+    font-family: 'exo_2extra_bold';
+}
+
+.sub-content p {
+    font-size: 18px;
+    font-family: 'open_sansregular';
+    color: white;
+    margin-top: 36px;
+    margin-bottom: 50px;
+}
+
+.sub-content button {
+    background-color: var(--secondary-color);
+    font-size: 18px;
+    line-height: 28px;
+    color: #ffffff;
+    font-weight: 800;
+    font-family: 'exo_2extra_bold';
+    text-align: center;
+    border: none;
+    padding: 16px 32px;
+}
+
+.about {
+    width: 100%;
+}
+
+
+.sub-content {
+    width: 57%;
+    margin-right: 30px;
+}
+
+.card-com {
+    background-color: #f1f2f2;
+}
+
+.card {
+    margin: 25px;
+    margin-left: 215px;
+    margin-right: 215px;
+    background-color: #f1f2f2;
+    border: none;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+.what-we {
+    display: flex;
+    justify-content: end;
+}
+
+.wewhat {
+    width: 70%;
+}
+
+.wewhat .wwd {
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-family: 'open_sansbold';
+}
+
+.wwe {
+    margin: 100px 0;
+}
+
+.allcard {
+    padding: 100px 0;
+}
+
+.card-title {
+    margin-top: 34px;
+    margin-bottom: 40px;
+}
+
+.card-text {
+    margin-top: 32px;
+}
+
+.contact-holder {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 100px 0;
+}
+
+.wewhat h2 {
+    font-family: 'exo_2extra_bold';
+    font-size: 52px;
+    color: var(--primary-color);
+}
+
+.wewhat h4 {
+    margin-top: 54px;
+    font-family: 'open_sansbold';
+    font-size: 28px;
+    color: var(--primary-color);
+}
+
+.wewhat p {
+    font-size: 18px;
+    color: var(--primary-color);
+    font-family: 'open_sansregular';
+}
+
+.card-com .tc-1 {
+    font-family: 'open_sansbold';
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+
+.card-com .tc-2 {
+    font-family: 'exo_2extra_bold';
+    font-size: 52px;
+    color: var(--primary-color);
+}
+
+.card-com .card-title {
+    font-family: 'exo_2bold';
+    font-size: 28px;
+    color: var(--primary-color);
+}
+
+.card-com .card-text {
+    font-family: 'open_sansregular';
+    font-size: 18px;
+    color: var(--primary-color);
+}
+
+.card-com .ct-1 {
+    font-family: 'exo_2extra_bold';
+    font-size: 18px;
+    color: var(--secondary-color);
+}
+
+.contact-us {
+    background-color: var(--primary-color);
+    color: white;
+    margin-top: 133px;
+}
+
+.send-msg p {
+    font-family: 'open_sansbold';
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+
+.send-msg h2 {
+    font-family: 'exo_2extra_bold';
+    font-size: 52px;
+    color: white;
+}
+
+.contact-us h2 {
+    font-size: 28px;
+    font-family: 'exo_2extra_bold';
+    color: white;
+}
+
+.contact-us p {
+    font-family: 'open_sansbold';
+    font-size: 18px;
+    color: var(--secondary-color);
+}
+
+.contact-us address {
+    font-family: 'open_sansregular';
+    color: white;
+    font-size: 18px;
+}
+
+.contact-us .ph span {
+    font-family: 'open_sansbold';
+    color: var(--secondary-color);
+    font-size: 18px;
+}
+
+.contact-us .ph {
+    font-family: 'open_sansregular';
+    color: white;
+    font-size: 18px;
+}
+
+
+.contact-us .sc {
+    font-size: 28px;
+    font-family: 'exo_2extra_bold';
+    color: white;
+}
+
+.send-msg .subbutton {
+    background-color: var(--secondary-color);
+    color: white;
+    font-family: 'exo_2extra_bold';
+    font-size: 18px;
+}
+
+.logo-svg .fb {
+    height: 40px;
+    width: 40px;
+    background-color: var(--secondary-color);
+    border-radius: 100%;
+    padding: 7px;
+}
+
+.logo-svg .li {
+    height: 40px;
+    width: 40px;
+    background-color: var(--secondary-color);
+    border-radius: 100%;
+    padding: 7px;
+}
+
+.footer {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.footer p {
+    margin-bottom: 0;
+    font-family: 'open_sansregular';
+    font-size: 15px;
+    color: var(--primary-color);
+}
+
+/* font-family: 'open_sansbold';
+font-family: 'open_sansregular';
+font-family: 'exo_2bold';
+font-family: 'exo_2extra_bold'; */
