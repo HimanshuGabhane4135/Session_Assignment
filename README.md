@@ -6,10 +6,8 @@ Shows an example of removing almost all of the annoying work that it takes to cr
 - useRef
 
 # Use
-- `git clone https://github.com/DZuz14/react-auto-form.git`
-- `cd react-auto-form`
+- `git clone https://github.com/HimanshuGabhane4135/Session_Assignment`
+- `cd react-session-assignmnet`
 - `npm i`
 - `npm start`
 
-# Demo
-[React Form Reusable Component](https://dzuz14.github.io/react-auto-form/)
