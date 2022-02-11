@@ -1,4 +1,4 @@
-# React Auto Form
+# React Session Assignment
 Shows an example of removing almost all of the annoying work that it takes to create forms in React. It has performance optimizations to prevent re-renders by using React Hooks and other React features:
 
 - useCallback
