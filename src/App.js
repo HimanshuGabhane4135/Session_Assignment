@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+/** @jsx jsx */
+import React, { useState } from 'react'
+import { css, jsx } from '@emotion/core'
+import AutoForm from './components/AutoForm'
+import config from './config'
 
-function App() {
+const App = () => {
+  const [status, setStatus] = useState('')
+
+  const handleSubmit = form => {
+    setStatus('loading')
+
+    setTimeout(() => {
+      setStatus('success')
+    }, 3000)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div css={ContainerCSS}>
+      <h1>Registration Form</h1>
+      <AutoForm form={config} onSubmit={handleSubmit} status={status} />
     </div>
-  );
+  )
 }
 
-export default App;
+const ContainerCSS = css`
+  padding: 125px 0 0 80px;
+
+  h1 {
+    color: black;
+    font-size: 56px;
+    margin: 0 0 15px;
+  }
+`
+
+export default App
