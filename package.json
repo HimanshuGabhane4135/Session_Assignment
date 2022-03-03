@@ -12,7 +12,9 @@
   "dependencies": {
     "react": "17.0.2",
     "react-native": "0.67.2",
-    "react-native-vector-icons": "^9.0.0"
+    "react-native-vector-icons": "^9.0.0",
+    "react-redux": "^7.2.6",
+    "redux": "^4.1.2"
   },
   "devDependencies": {
     "@babel/core": "^7.17.2",
@@ -27,8 +29,9 @@
   "jest": {
     "preset": "react-native"
   },
-  
   "rnpm": {
-  "assets": ["./screen/assets/fonts"]
+    "assets": [
+      "./screen/assets/fonts"
+    ]
   }
 }
