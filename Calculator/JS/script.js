@@ -1,33 +1,33 @@
 function addChar(input, character) {
   if (input.value == null || input.value == "0") input.value = character;
-	else if(checkIsOperator(input)) {
-		if(checkExistingOperator(character, input.value[input.value.length-1])) {
-			alert('operator already exist')
-		} 
-		else {
-			input.value = input.value.substring(0, input.value.length - 1)+character;
-		}
-	}
+  else if (checkIsOperator(input)) {
+    if (checkExistingOperator(character, input.value[input.value.length - 1])) {
+      alert('operator already exist')
+    }
+    else {
+      input.value = input.value.substring(0, input.value.length + 1) + character;
+    }
+  }
   else input.value += character;
-}	
+}
 
 function checkExistingOperator(character, oldChar) {
-	if(character == oldChar) {
-		return true;
-	}
-	else {
-		return false;
-	}
+  if (character == oldChar) {
+    return true;
+  }
+  else {
+    return false;
+  }
 }
 
 function checkIsOperator(input) {
-	let oldChar = input.value[input.value.length-1];
-	if(oldChar == "/" || oldChar == "*" || oldChar == "+" || oldChar == "-" || oldChar == "%") {
-		return true;
-	}
-	else {
-		return false;
-	}
+  let oldChar = input.value[input.value.length - 1];
+  if (oldChar == "/" || oldChar == "*" || oldChar == "+" || oldChar == "-" || oldChar == "%") {
+    return true;
+  }
+  else {
+    return false;
+  }
 }
 
 function cos(form) {
@@ -44,6 +44,8 @@ function tan(form) {
 
 function sqrt(form) {
   form.display.value = Math.sqrt(form.display.value);
+  console.log('form.display.value: ', form.display.value);
+
 }
 
 function ln(form) {
